@@ -29,9 +29,13 @@
 		247739A22B162FAF000F6B56 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247739A12B162FAF000F6B56 /* ConfirmView.swift */; };
 		247739A42B163118000F6B56 /* Bungee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247739A32B1630FA000F6B56 /* Bungee-Regular.ttf */; };
 		247739A62B16EB8F000F6B56 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247739A52B16EB8F000F6B56 /* DesignView.swift */; };
+		247739A82B17820F000F6B56 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247739A72B17820F000F6B56 /* LottieView.swift */; };
+		247739B02B178A76000F6B56 /* waitting.json in Resources */ = {isa = PBXBuildFile; fileRef = 247739AF2B178A76000F6B56 /* waitting.json */; };
+		7CC3C6BC8E8CD6BC2E4067EF /* Pods_Vindecor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B60CB6F045D57C7CB8973D /* Pods_Vindecor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1550E60373D58AFFFD724A47 /* Pods-Vindecor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vindecor.release.xcconfig"; path = "Target Support Files/Pods-Vindecor/Pods-Vindecor.release.xcconfig"; sourceTree = "<group>"; };
 		247739632B150000000F6B56 /* Vindecor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vindecor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247739662B150000000F6B56 /* VindecorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VindecorApp.swift; sourceTree = "<group>"; };
 		247739682B150000000F6B56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,10 @@
 		247739A12B162FAF000F6B56 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		247739A32B1630FA000F6B56 /* Bungee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bungee-Regular.ttf"; sourceTree = "<group>"; };
 		247739A52B16EB8F000F6B56 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		247739A72B17820F000F6B56 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		247739AF2B178A76000F6B56 /* waitting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitting.json; path = ../waitting.json; sourceTree = "<group>"; };
+		842BFCCD6DFBD3F12D1A1B07 /* Pods-Vindecor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vindecor.debug.xcconfig"; path = "Target Support Files/Pods-Vindecor/Pods-Vindecor.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B60CB6F045D57C7CB8973D /* Pods_Vindecor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vindecor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC3C6BC8E8CD6BC2E4067EF /* Pods_Vindecor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,8 @@
 			children = (
 				247739652B150000000F6B56 /* Vindecor */,
 				247739642B150000000F6B56 /* Products */,
+				4CC2F111271A1C0E874A40E3 /* Pods */,
+				BFF47202F5708190E332144F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,8 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				2477397D2B1596B6000F6B56 /* Info.plist */,
+				247739B42B178D13000F6B56 /* ViewModel */,
+				247739B22B178C85000F6B56 /* Views */,
+				247739B32B178CE3000F6B56 /* Other */,
 				247739782B1594D5000F6B56 /* Font */,
-				247739742B15000B000F6B56 /* Home */,
 				247739662B150000000F6B56 /* VindecorApp.swift */,
 				247739682B150000000F6B56 /* ContentView.swift */,
 				2477396A2B150001000F6B56 /* Assets.xcassets */,
@@ -107,41 +120,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		247739742B15000B000F6B56 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				2477398F2B15D0C3000F6B56 /* ScreenList.swift */,
-				247739982B15DEF4000F6B56 /* 1 */,
-				247739752B150019000F6B56 /* HomeView.swift */,
-				247739852B15A93E000F6B56 /* DesignPickerView.swift */,
-				2477398B2B15C748000F6B56 /* InformationEntryView.swift */,
-				247739A12B162FAF000F6B56 /* ConfirmView.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		247739782B1594D5000F6B56 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				247739AF2B178A76000F6B56 /* waitting.json */,
 				247739892B15B8CF000F6B56 /* PaytoneOne-Regular.ttf */,
 				2477397F2B159AAD000F6B56 /* BungeeShade-Regular.ttf */,
 				247739A32B1630FA000F6B56 /* Bungee-Regular.ttf */,
 				247739832B159F28000F6B56 /* Anton-Regular.ttf */,
 				247739812B159B85000F6B56 /* IbarraRealNova-VariableFont_wght.ttf */,
-				247739932B15DD1A000F6B56 /* Model */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		247739932B15DD1A000F6B56 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2477398D2B15C7C1000F6B56 /* InformationEnTryViewModel.swift */,
-				247739962B15DD49000F6B56 /* PremisesInformationViewModel.swift */,
-				2477399B2B15DF8A000F6B56 /* EnterBudgetViewModel.swift */,
-				2477399F2B15E374000F6B56 /* DesignStyleViewModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		247739982B15DEF4000F6B56 /* 1 */ = {
@@ -155,6 +144,55 @@
 			path = 1;
 			sourceTree = "<group>";
 		};
+		247739B22B178C85000F6B56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				247739982B15DEF4000F6B56 /* 1 */,
+				247739752B150019000F6B56 /* HomeView.swift */,
+				247739852B15A93E000F6B56 /* DesignPickerView.swift */,
+				2477398B2B15C748000F6B56 /* InformationEntryView.swift */,
+				247739A12B162FAF000F6B56 /* ConfirmView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		247739B32B178CE3000F6B56 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				247739A72B17820F000F6B56 /* LottieView.swift */,
+				2477398F2B15D0C3000F6B56 /* ScreenList.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		247739B42B178D13000F6B56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2477398D2B15C7C1000F6B56 /* InformationEnTryViewModel.swift */,
+				247739962B15DD49000F6B56 /* PremisesInformationViewModel.swift */,
+				2477399B2B15DF8A000F6B56 /* EnterBudgetViewModel.swift */,
+				2477399F2B15E374000F6B56 /* DesignStyleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4CC2F111271A1C0E874A40E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				842BFCCD6DFBD3F12D1A1B07 /* Pods-Vindecor.debug.xcconfig */,
+				1550E60373D58AFFFD724A47 /* Pods-Vindecor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFF47202F5708190E332144F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6B60CB6F045D57C7CB8973D /* Pods_Vindecor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 247739712B150001000F6B56 /* Build configuration list for PBXNativeTarget "Vindecor" */;
 			buildPhases = (
+				7FECBEA0C880D462DECF4FA3 /* [CP] Check Pods Manifest.lock */,
 				2477395F2B150000000F6B56 /* Sources */,
 				247739602B150000000F6B56 /* Frameworks */,
 				247739612B150000000F6B56 /* Resources */,
+				ED39AC18204A5A8E19F71C3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +257,7 @@
 				247739802B159AAD000F6B56 /* BungeeShade-Regular.ttf in Resources */,
 				247739842B159F56000F6B56 /* Anton-Regular.ttf in Resources */,
 				2477398A2B15B8CF000F6B56 /* PaytoneOne-Regular.ttf in Resources */,
+				247739B02B178A76000F6B56 /* waitting.json in Resources */,
 				247739A42B163118000F6B56 /* Bungee-Regular.ttf in Resources */,
 				2477396E2B150001000F6B56 /* Preview Assets.xcassets in Resources */,
 				2477396B2B150001000F6B56 /* Assets.xcassets in Resources */,
@@ -224,6 +265,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FECBEA0C880D462DECF4FA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vindecor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED39AC18204A5A8E19F71C3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vindecor/Pods-Vindecor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vindecor/Pods-Vindecor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vindecor/Pods-Vindecor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2477395F2B150000000F6B56 /* Sources */ = {
@@ -237,6 +320,7 @@
 				247739A22B162FAF000F6B56 /* ConfirmView.swift in Sources */,
 				247739922B15DC0E000F6B56 /* PremisesInformationView.swift in Sources */,
 				247739A02B15E374000F6B56 /* DesignStyleViewModel.swift in Sources */,
+				247739A82B17820F000F6B56 /* LottieView.swift in Sources */,
 				247739862B15A93E000F6B56 /* DesignPickerView.swift in Sources */,
 				247739902B15D0C3000F6B56 /* ScreenList.swift in Sources */,
 				2477399E2B15E355000F6B56 /* DesignStyleView.swift in Sources */,
@@ -367,6 +451,7 @@
 		};
 		247739722B150001000F6B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842BFCCD6DFBD3F12D1A1B07 /* Pods-Vindecor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +482,7 @@
 		};
 		247739732B150001000F6B56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1550E60373D58AFFFD724A47 /* Pods-Vindecor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

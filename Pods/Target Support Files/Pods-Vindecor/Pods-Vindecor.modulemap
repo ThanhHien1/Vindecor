@@ -1,0 +1,6 @@
+framework module Pods_Vindecor {
+  umbrella header "Pods-Vindecor-umbrella.h"
+
+  export *
+  module * { export * }
+}
