@@ -11,12 +11,6 @@ struct HomeView: View {
     @State var path = NavigationPath()
     @State private var navigateToInfoEntry = false
     var body: some View {
-        let standardWidth: CGFloat = 375.0 // Chiều rộng màn hình chuẩn
-        let standardHeight: CGFloat = 667.0 // Chiều cao màn hình chuẩn
-
-        let widthRatio = UIScreen.main.bounds.width / standardWidth
-        let heightRatio = UIScreen.main.bounds.height / standardHeight
-
         let overallRatio = min(widthRatio, heightRatio)
         NavigationStack(path: $path){
             ZStack {

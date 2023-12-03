@@ -79,9 +79,7 @@ struct InformationEntryView: View {
                 }
                 .padding(.top, 20)
                 Spacer()
-                
             }
-        .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Vui lòng điền đầy đủ thông tin"), message: Text(""), dismissButton: .default(Text("OK")))
