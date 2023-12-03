@@ -31,11 +31,13 @@ struct EnterBudgetView: View {
                     }
                     Text("Ngân sách của khách hàng")
                         .font(.custom("BungeeShade-Regular", size: 21))
+                        .foregroundColor(.black)
                         .padding(.top, 60)
                     Spacer().frame(height: 60)
                     VStack {
                         ZStack {
                             TextField("", text: $viewModel.budget)
+                                .foregroundColor(.black)
                                 .padding(.leading, 15)
                             Image(systemName: "magnifyingglass")
                                 .resizable()
@@ -79,6 +81,7 @@ struct EnterBudgetView: View {
                         Spacer()
                         VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)
                         Text("vindecor.com.vn")
+                            .foregroundColor(.black)
                             .font(.system(size: 13))
                             .fontWeight(.medium)
                             .padding(.horizontal, 5)

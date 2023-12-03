@@ -32,6 +32,7 @@ struct PremisesInformationView: View {
                         .frame(width: 140, height: 90)
                 }
                 Text("Thông tin mặt bằng")
+                    .foregroundColor(.black)
                     .font(.custom("BungeeShade-Regular", size: 21))
                     .padding(.top, 60)
                 Spacer().frame(height: 60)
@@ -63,6 +64,7 @@ struct PremisesInformationView: View {
                     Spacer()
                     VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)
                     Text("vindecor.com.vn")
+                        .foregroundColor(.black)
                         .font(.system(size: 14))
                         .fontWeight(.medium)
                         .padding(.horizontal, 5)
@@ -74,8 +76,10 @@ struct PremisesInformationView: View {
                 }
             }
             .padding(.top, 20)
+//            .ignoresSafeArea(.keyboard)
             Spacer()
         }
+        .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .alert(isPresented: $showAlertPremisesInformationView) {
             Alert(title: Text("Vui lòng điền đầy đủ thông tin"), message: Text(""), dismissButton: .default(Text("OK")))

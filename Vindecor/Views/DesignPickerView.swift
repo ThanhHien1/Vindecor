@@ -29,6 +29,7 @@ struct DesignPickerView: View {
                         .frame(width: 140, height: 90)
                 }
                 Text("Chọn chức năng thiết kế")
+                    .foregroundColor(.black)
                     .font(.custom("BungeeShade-Regular", size: 21))
                     .padding(.top, 60)
                 Spacer().frame(height: 60)
@@ -72,6 +73,7 @@ struct DesignPickerView: View {
                         Spacer()
                         VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)
                         Text("vindecor.com.vn")
+                            .foregroundColor(.black)
                             .font(.system(size: 13))
                             .fontWeight(.medium)
                             .padding(.horizontal, 5)
@@ -90,30 +92,7 @@ struct DesignPickerView: View {
         .navigationBarBackButtonHidden(true)
     }
 }
-struct EditButton: View {
-    let title: String
-    var selected: () -> Void
-    var body: some View {
-        VStack {
-                Button(action: {
-                    selected()
-                }) {
-                    Text(title)
-                        .foregroundColor(Color("AB8776"))
-                        .font(.custom("PaytoneOne-Regular", size: 26))
-                }
-                .frame(width: 300, height: 60)
-                .overlay(
-                    HStack(spacing: 0) {
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color("422716"), lineWidth: 2)
-                    }
-                )
-                .background(Color.white)
-                .cornerRadius(25)
-            }
-    }
-}
+
 struct DesignPickerView_Previews: PreviewProvider {
     static var previews: some View {
         DesignPickerView(path: .constant(NavigationPath()))

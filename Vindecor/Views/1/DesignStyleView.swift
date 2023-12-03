@@ -15,6 +15,7 @@ struct DesignStyleView: View {
 //        NavigationView {
             ZStack {
                 Color("EEE8DB")
+                Color.clear
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 0) {
                     HStack(alignment: .center, spacing: 0) {
@@ -32,6 +33,7 @@ struct DesignStyleView: View {
                             .frame(width: 140, height: 90)
                     }
                     Text("NHU CẦU CỦA KHÁCH HÀNG")
+                        .foregroundColor(.black)
                         .font(.custom("BungeeShade-Regular", size: 21))
                         .padding(.top, 60)
                     Spacer().frame(height: 60)
@@ -65,6 +67,7 @@ struct DesignStyleView: View {
                         Spacer()
                         VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)
                         Text("vindecor.com.vn")
+                            .foregroundColor(.black)
                             .font(.system(size: 14))
                             .fontWeight(.medium)
                             .padding(.horizontal, 5)
@@ -77,6 +80,7 @@ struct DesignStyleView: View {
                     }
                 }
                 .padding(.top, 20)
+//                .ignoresSafeArea(.keyboard)
                 Spacer()
                 
             }
@@ -84,6 +88,7 @@ struct DesignStyleView: View {
         .alert(isPresented: $showAlertDesignStyleView) {
             Alert(title: Text("Vui lòng điền đầy đủ thông tin"), message:  Text(""), dismissButton: .default(Text("OK")))
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 

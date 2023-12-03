@@ -32,7 +32,9 @@ struct InformationEntryView: View {
                     }
 //                    .padding(.top, -10)
                     Text("Thông tin cá nhân")
+                        .foregroundColor(.black)
                         .font(.custom("BungeeShade-Regular", size: 21))
+                        .foregroundColor(.black)
                         .padding(.top, 60)
                     Spacer().frame(height: 60)
                     VStack {
@@ -63,6 +65,7 @@ struct InformationEntryView: View {
                         Spacer()
                         VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)
                         Text("vindecor.com.vn")
+                            .foregroundColor(.black)
                             .font(.system(size: 14))
                             .fontWeight(.medium)
                             .padding(.horizontal, 5)
@@ -78,6 +81,7 @@ struct InformationEntryView: View {
                 Spacer()
                 
             }
+        .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Vui lòng điền đầy đủ thông tin"), message: Text(""), dismissButton: .default(Text("OK")))
@@ -97,11 +101,12 @@ struct EditTextField: View {
                 .font(.system(size: 10))
                 .multilineTextAlignment(.center)
 //                .padding(10)
-                .frame(width: 95, height: 45)
+                .frame(width: 95, height: 48)
                 .background(Color(color))
             TextField("", text: $text)
+                .foregroundColor(.black)
                 .padding(10)
-                .frame(width: 250, height: 45)
+                .frame(width: 250, height: 48)
                 .background(.white)
                 .cornerRadius(0)
             }
@@ -110,7 +115,7 @@ struct EditTextField: View {
                 .stroke(isFocused ? Color(color) : Color("E1E2E7"), lineWidth: 1)
         )
         .focused($isFocused)
-        .padding(.top, 5)
+        .padding(.top, 8)
         .padding(.horizontal, 30)
     }
 }

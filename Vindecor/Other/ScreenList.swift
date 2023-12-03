@@ -24,6 +24,8 @@ func getScreen(id: String, path: Binding<NavigationPath>) -> some View{
         ConfirmView(path: path)
     case "DesignView":
         DesignView(path: path)
+    case "HomeView":
+        HomeView()
     default:
         Text("screen is developing")
     }

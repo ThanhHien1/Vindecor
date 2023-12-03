@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2423B30A2B1B6760009BE015 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423B3092B1B6760009BE015 /* EditButton.swift */; };
 		247739672B150000000F6B56 /* VindecorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247739662B150000000F6B56 /* VindecorApp.swift */; };
 		247739692B150000000F6B56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247739682B150000000F6B56 /* ContentView.swift */; };
 		2477396B2B150001000F6B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2477396A2B150001000F6B56 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1550E60373D58AFFFD724A47 /* Pods-Vindecor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vindecor.release.xcconfig"; path = "Target Support Files/Pods-Vindecor/Pods-Vindecor.release.xcconfig"; sourceTree = "<group>"; };
+		2423B3092B1B6760009BE015 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		247739632B150000000F6B56 /* Vindecor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vindecor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247739662B150000000F6B56 /* VindecorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VindecorApp.swift; sourceTree = "<group>"; };
 		247739682B150000000F6B56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				247739A72B17820F000F6B56 /* LottieView.swift */,
 				2477398F2B15D0C3000F6B56 /* ScreenList.swift */,
+				2423B3092B1B6760009BE015 /* EditButton.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				247739762B150019000F6B56 /* HomeView.swift in Sources */,
 				247739692B150000000F6B56 /* ContentView.swift in Sources */,
 				2477398C2B15C748000F6B56 /* InformationEntryView.swift in Sources */,
+				2423B30A2B1B6760009BE015 /* EditButton.swift in Sources */,
 				2477399A2B15DF0D000F6B56 /* EnterBudgetView.swift in Sources */,
 				247739672B150000000F6B56 /* VindecorApp.swift in Sources */,
 			);
