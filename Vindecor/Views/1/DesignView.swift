@@ -52,7 +52,7 @@ struct DesignView: View {
                     VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)
                     Text("vindecor.com.vn")
                         .foregroundColor(.black)
-                        .font(.system(size: 12))
+                        .font(.system(size: 11))
                         .fontWeight(.medium)
                         .padding(.horizontal, 5)
                     VStack { Divider()}.frame(width: 40).background(.black).opacity(0.7)

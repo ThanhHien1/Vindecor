@@ -33,6 +33,7 @@
 		247739A82B17820F000F6B56 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247739A72B17820F000F6B56 /* LottieView.swift */; };
 		247739B02B178A76000F6B56 /* waitting.json in Resources */ = {isa = PBXBuildFile; fileRef = 247739AF2B178A76000F6B56 /* waitting.json */; };
 		7CC3C6BC8E8CD6BC2E4067EF /* Pods_Vindecor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B60CB6F045D57C7CB8973D /* Pods_Vindecor.framework */; };
+		982F7DB82B1C4DBD00CD4E2F /* KeyBoardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F7DB72B1C4DBD00CD4E2F /* KeyBoardExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		247739A72B17820F000F6B56 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		247739AF2B178A76000F6B56 /* waitting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitting.json; path = ../waitting.json; sourceTree = "<group>"; };
 		842BFCCD6DFBD3F12D1A1B07 /* Pods-Vindecor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vindecor.debug.xcconfig"; path = "Target Support Files/Pods-Vindecor/Pods-Vindecor.debug.xcconfig"; sourceTree = "<group>"; };
+		982F7DB72B1C4DBD00CD4E2F /* KeyBoardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardExt.swift; sourceTree = "<group>"; };
 		E6B60CB6F045D57C7CB8973D /* Pods_Vindecor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vindecor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 				247739A72B17820F000F6B56 /* LottieView.swift */,
 				2477398F2B15D0C3000F6B56 /* ScreenList.swift */,
 				2423B3092B1B6760009BE015 /* EditButton.swift */,
+				982F7DB72B1C4DBD00CD4E2F /* KeyBoardExt.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				247739A82B17820F000F6B56 /* LottieView.swift in Sources */,
 				247739862B15A93E000F6B56 /* DesignPickerView.swift in Sources */,
 				247739902B15D0C3000F6B56 /* ScreenList.swift in Sources */,
+				982F7DB82B1C4DBD00CD4E2F /* KeyBoardExt.swift in Sources */,
 				2477399E2B15E355000F6B56 /* DesignStyleView.swift in Sources */,
 				247739762B150019000F6B56 /* HomeView.swift in Sources */,
 				247739692B150000000F6B56 /* ContentView.swift in Sources */,
@@ -471,12 +475,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hien.Vindecor;
+				PRODUCT_BUNDLE_IDENTIFIER = "--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -502,12 +508,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hien.Vindecor;
+				PRODUCT_BUNDLE_IDENTIFIER = "--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

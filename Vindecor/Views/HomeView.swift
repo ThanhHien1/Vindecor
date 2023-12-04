@@ -11,12 +11,6 @@ struct HomeView: View {
     @State var path = NavigationPath()
     @State private var navigateToInfoEntry = false
     var body: some View {
-        let standardWidth: CGFloat = 375.0 // Chiều rộng màn hình chuẩn
-        let standardHeight: CGFloat = 667.0 // Chiều cao màn hình chuẩn
-
-        let widthRatio = UIScreen.main.bounds.width / standardWidth
-        let heightRatio = UIScreen.main.bounds.height / standardHeight
-
         let overallRatio = min(widthRatio, heightRatio)
         NavigationStack(path: $path){
             ZStack {
@@ -33,10 +27,10 @@ struct HomeView: View {
                         .font(.custom("BungeeShade-Regular", size: 18))
                         .padding(.top, 10)
                     HStack {
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("422716"))
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("71513A"))
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("A18971"))
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("C9BFB7"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("422716"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("71513A"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("A18971"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("C9BFB7"))
                     }
                     .padding(.top, 15)
                     Spacer().frame(height: 15)

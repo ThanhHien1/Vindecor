@@ -12,11 +12,11 @@ struct DesignStyleView: View {
     @Binding var path: NavigationPath
     @State private var showAlertDesignStyleView = false
     var body: some View {
-//        NavigationView {
-            ZStack {
-                Color("EEE8DB")
-                Color.clear
-                    .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Color("EEE8DB")
+                .edgesIgnoringSafeArea(.all)
+            ScrollView{
+                
                 VStack(alignment: .center, spacing: 0) {
                     HStack(alignment: .center, spacing: 0) {
                         Image("home55")
@@ -80,15 +80,14 @@ struct DesignStyleView: View {
                     }
                 }
                 .padding(.top, 20)
-//                .ignoresSafeArea(.keyboard)
                 Spacer()
                 
             }
-        .navigationBarBackButtonHidden(true)
-        .alert(isPresented: $showAlertDesignStyleView) {
-            Alert(title: Text("Vui lòng điền đầy đủ thông tin"), message:  Text(""), dismissButton: .default(Text("OK")))
+            .navigationBarBackButtonHidden(true)
+            .alert(isPresented: $showAlertDesignStyleView) {
+                Alert(title: Text("Vui lòng điền đầy đủ thông tin"), message:  Text(""), dismissButton: .default(Text("OK")))
+            }
         }
-        .ignoresSafeArea(.keyboard)
     }
 }
 
