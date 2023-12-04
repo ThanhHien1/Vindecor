@@ -27,10 +27,10 @@ struct HomeView: View {
                         .font(.custom("BungeeShade-Regular", size: 18))
                         .padding(.top, 10)
                     HStack {
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("422716"))
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("71513A"))
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("A18971"))
-                        RoundedRectangle (cornerRadius: 0).stroke().frame(width: 35, height: 10).background(Color("C9BFB7"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("422716"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("71513A"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("A18971"))
+                        RoundedRectangle (cornerRadius: 0).stroke(Color.black).frame(width: 35, height: 10).background(Color("C9BFB7"))
                     }
                     .padding(.top, 15)
                     Spacer().frame(height: 15)

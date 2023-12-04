@@ -14,7 +14,6 @@ struct DesignStyleView: View {
     var body: some View {
         ZStack {
             Color("EEE8DB")
-            Color.clear
                 .edgesIgnoringSafeArea(.all)
             ScrollView{
                 
